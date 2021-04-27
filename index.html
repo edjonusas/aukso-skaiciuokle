@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Medžiagų skaičiuoklė</title>
+  </head>
+  <body>
+    <section id="section-form">
+      <h1>Aukso skaičiuoklė</h1>
+      <form>
+        <div>
+          <label for="material-selector">Versti iš:</label>
+          <select name="material" id="material-selector">
+            <option value="999">Aukso 999</option>
+            <option value="750">Aukso 750</option>
+            <option value="585">Aukso 585</option>
+            <option value="375">Aukso 375</option>
+          </select>
+        </div>
+        <div>
+          <label for="material-selector">Versti į:</label>
+          <select name="material" id="to-material-selector">
+            <option value="999">Auksą 999</option>
+            <option value="750">Auksą 750</option>
+            <option selected value="585">Auksą 585</option>
+            <option value="375">Aukso 375</option>
+          </select>
+        </div>
+        <div>
+          <label for="material-amount">Įveskite kiekį gramais:</label>
+          <input id="material-amount" type="text" required />
+        </div>
+        <button type="submit">Skaičiuoti</button>
+      </form>
+      <div id="results"></div>
+    </section>
+  </body>
+</html>
